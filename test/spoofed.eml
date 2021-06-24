@@ -1,0 +1,48 @@
+Delivered-To: gr33nm0nk2802@gmail.com
+Received: by 2002:aa7:dd49:0:0:0:0:0 with SMTP id o9csp3855327edw;
+        Mon, 21 Jun 2021 03:40:02 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzVNtw29JiqhiFxov6qXJEGbRxJ9KTLiIZUxCNVWnUAi0WILj9qE1u7sGXXETM8TtMUEKiV
+X-Received: by 2002:a17:906:240d:: with SMTP id z13mr22059379eja.118.1624272002585;
+        Mon, 21 Jun 2021 03:40:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1624272002; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AaNvvrW34dF9Iy0lz1Gy1JO0aekxYdaocbpofBajM3QxWX3k41m7/kk4kbx8JNvZYS
+         BvswwOQti3PGTGWvc9ixp+RbMEjw3NUqrZbvljoCgQL6pGbRSJ9p4XpqFRWnZmTNBCPI
+         v3DxIAdztdGXIhfhPu5aSLmwb97P4EIUcMFAdKDAbYih+v2Q2KWEo0oUxz4z0o4TETEV
+         ejr14QMcuFCf49slXVijT3beRDH7cVs91FcEJGTAO+xynPHqCcwx3H8mSBP3nNNoXOSx
+         Tlt6ug4KRTidREQuUgQ17B0QjQyFIpwU0WWluRzydv1urR911oy09O228cpxi3r/hkEy
+         0mJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:reply-to:errors-to:importance:from:subject:to;
+        bh=r5qChySdEvwkfGqxeILog3RYNzvluaH1mkVoFZ7c/1w=;
+        b=hXuLYLDi1NwJwy1yOvap7ovdbFhWceYDjOsjbc95ypp+zjgRjv9lUgKqQKvmj282+D
+         q3b0+OmICVoK73m4HaJ44wBPNK3ZdC8k1l5u4sOvdma5Lr/e9bN3YtdMVK4k5SoSpyij
+         HPab94N8daGF+gpEOEVRsDk4M1dNt4VsNjIlX4WG39KpgEivNE8iC3MeCN+Hf/oNLZeM
+         uN47MXJmvZZuLEri7QZxc+k3ynCbHvaUnbD4V11XcvPZuOvg1JM0GAh6k17iRVETHEQN
+         FNTymmcz7HuAKoYklpzsYqBqvEyLAQD4+g73OQ2VcVPKF3DTQi6DrH3tUMMI3vxGGzIb
+         M4Cw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=softfail (google.com: domain of transitioning sm2315@cse.jgec.ac.in does not designate 101.99.94.155 as permitted sender) smtp.mailfrom=sm2315@cse.jgec.ac.in
+Return-Path: <sm2315@cse.jgec.ac.in>
+Received: from emkei.cz (emkei.cz. [101.99.94.155])
+        by mx.google.com with ESMTPS id f7si8905426edq.341.2021.06.21.03.40.02
+        for <gr33nm0nk2802@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 21 Jun 2021 03:40:02 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning sm2315@cse.jgec.ac.in does not designate 101.99.94.155 as permitted sender) client-ip=101.99.94.155;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning sm2315@cse.jgec.ac.in does not designate 101.99.94.155 as permitted sender) smtp.mailfrom=sm2315@cse.jgec.ac.in
+Received: by emkei.cz (Postfix, from userid 33)
+	id 186B924176; Mon, 21 Jun 2021 12:40:02 +0200 (CEST)
+To: gr33nm0nk2802@gmail.com
+Subject: =?UTF-8?B?V2hvYW1pPw==?=
+From: "Syed Modassir Ali" <sm2315@cse.jgec.ac.in>
+X-Priority: 3 (Normal)
+Importance: Normal
+Errors-To: sm2315@cse.jgec.ac.in
+Reply-To: sm2315@cse.jgec.ac.in
+Content-Type: text/plain; charset=utf-8
+Message-Id: <20210621104002.186B924176@emkei.cz>
+Date: Mon, 21 Jun 2021 12:40:02 +0200 (CEST)
+
+This is a test to learn spoofing.

@@ -1,0 +1,81 @@
+Delivered-To: sm2315@cse.jgec.ac.in
+Received: by 2002:a05:622a:54b:0:0:0:0 with SMTP id m11csp767951qtx;
+        Thu, 24 Jun 2021 11:29:34 -0700 (PDT)
+X-Received: by 2002:a17:906:b20d:: with SMTP id p13mr6592087ejz.519.1624559374423;
+        Thu, 24 Jun 2021 11:29:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1624559374; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LimigOZWezUIRkn80vN0rHTTIFL33n4m6W5GmQGijQISIZfJJiaZ7hVu+2acrPsocc
+         WlV7nQvNx3zxBEv7UUC9aOGbthiw18yVG9zzEK6rbJ7RjM7QgAaLZHfYndqMCdnFN14d
+         KF4izi/SYLWzWYaBN80Bbv8/ICQ3H4wUGWsNEtK+CGMsh5wWCHM/ev+p+qZZnaqqA9Oa
+         Ynjjm68KSHZNi5PQLxXRpgMejzqF2t/i7I2bLE5DsfHabRbHuNDZT8suKHn7vBJCnI3H
+         JTR9qlYjRKzv1Sv4rKXMW043EO7trVozsfWvVofLRRQYEinGBV6u2nVzrk4C6VKqA9bS
+         ttZA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Xv/F6z3BMW+GDSDlgbxRNPkMIkTU1Cl99j2AH0xrWDM=;
+        b=qRiuUtI+AcpHM3rLRPWJPxJ2NobqCZ3/WHc9S3JmaNCZ6wLbstWPg7Nr7oQmkNPXDF
+         sV9Hi2aAzGk1lqEnSxemVnuBd4a6yL9ylpoKdNMzIIcw8nMvzzoRgtPEWL7B0QTnMG6i
+         InxkR3zwbHmZL9qQEG70dAN/OprJR1LslserYloc7km0wxQ50LgZxZAvO8O1qCYzN1oD
+         AFNKxmdOuih/1Sn7JCZBTtZhKjbgQ1GfYyzmB8Z6XsR0j8i/W58+egD7ZnJg9k8M0wd7
+         EzFQv1VxURKu0xel3mz4GOldgv8/NV2/OUwaQOQpZbOYoajZqd+qgXS5kesydgB9LpV1
+         Vevg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Yw1+pYvT;
+       spf=pass (google.com: domain of gr33nm0nk2802@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=gr33nm0nk2802@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gr33nm0nk2802@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id h9sor4356126edb.0.2021.06.24.11.29.34
+        for <sm2315@cse.jgec.ac.in>
+        (Google Transport Security);
+        Thu, 24 Jun 2021 11:29:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gr33nm0nk2802@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Yw1+pYvT;
+       spf=pass (google.com: domain of gr33nm0nk2802@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=gr33nm0nk2802@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Xv/F6z3BMW+GDSDlgbxRNPkMIkTU1Cl99j2AH0xrWDM=;
+        b=Yw1+pYvThcd8a+f664Dy71wGZ507CGM0XaY2WEbmQVnXvA4q8NLwNL3xD8Wp27CP3r
+         4HyPQydq+E0GN4nFt8ARW41c35Vxvxhgv4FOkOHhv1I8aLdtUoIFI8/bUNGBsgUXvMOS
+         1FRwogsrP4DKLrA07e8SoEULULBLP1VcB7h3hyw997isC+YNvYhVgyCjJ1AwxzZdKI9K
+         4AcJ6D+1wDNBezmMUuCWToEnokmGMWVHA8zteOrVD+aKkMqh7lcQ0HuDuxzLnL8DXuXl
+         YHLnW3ezgyyx1bmG2RKxC1/RG9dw5XkeePCB/6PR3zQ/T0UmBg3y94GuvIZtxD541w+L
+         t34w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Xv/F6z3BMW+GDSDlgbxRNPkMIkTU1Cl99j2AH0xrWDM=;
+        b=SgDC8m0GsIrIH9x2KexcZElfHC/H1OtroL6CV0AJ74M0jS7I9+6WCrHQ33vgqBhx2D
+         7eP6QnsyEOnCv8rhchTz4dEMc/gOyx6LRN98jesDZgoH6Udrtcms8qUQ827L5gwZTeOE
+         T1mWrvpwrb/ozMufOYUzGWmc/jEqDRd7Bb7vLlqzDGiaALZq8Aiy7VqzJpKXwBQCPWIa
+         KJ/rzK1PKvRgE43QxmYTU0vZ7ronf41A44RsFXr9aEfe5koJEKWQIO+eRc1hbRKDoDQQ
+         2ZdrMZ2onc1VmihVaLVXWVUwLfhJmxmPOjV1MhCRlaj8RcbK8hCVd3gJfVswzhaubSBA
+         w/5A==
+X-Gm-Message-State: AOAM530OpujxBYzsU0lyOAS8t1/psNG6t+0G1KxVOY/lshKwOyVfS1qd
+	DnQdsgv+68BFguC1zcUKHMo4fL1zSg/Xeyx7GhyHNxYvYFLdwg==
+X-Google-Smtp-Source: ABdhPJwV7lc18mDuMq1Zb5NksY9MqqHvbQfVo8idNM+zdpxF9HOT2Dj29soMYq9eTYffFQ5khS60V432tERBhyITEzg=
+X-Received: by 2002:a05:6402:120b:: with SMTP id c11mr9176787edw.209.1624559373943;
+ Thu, 24 Jun 2021 11:29:33 -0700 (PDT)
+MIME-Version: 1.0
+From: gr33n m0nk <gr33nm0nk2802@gmail.com>
+Date: Thu, 24 Jun 2021 23:59:23 +0530
+Message-ID: <CAAJrJcE30Gt05PaO6m_i8G_7qwBg67SBcmytrHNmLEL3Mo59iw@mail.gmail.com>
+Subject: This is a test original mail subject
+To: sm2315@cse.jgec.ac.in
+Content-Type: multipart/alternative; boundary="0000000000006684f505c587347d"
+
+--0000000000006684f505c587347d
+Content-Type: text/plain; charset="UTF-8"
+
+This is the original test mail body.
+
+--0000000000006684f505c587347d
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">This is the original test mail body.<br></div>
+
+--0000000000006684f505c587347d--
