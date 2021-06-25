@@ -54,9 +54,15 @@ Then we pass the `eml` file to the executable.
 
 1. Use `meta.py` from the cloned repo.
 
+```
+python3 meta.py -f message.eml
+```
+
 ![metapy-linux](images/linux-metapy.png)
 
 ```
+wget https://github.com/gr33nm0nk2802/mailMeta/releases/download/1.0.0/meta
+chmod +x meta
 meta -f message.eml
 ```
 <br>
