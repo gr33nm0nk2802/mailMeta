@@ -5,9 +5,6 @@ import re,sys
 import argparse
 from colorama import Fore, Back, Style
 
-# Start Banner
-# End Banner
-
 print(Fore.GREEN+"""
                          _ _ __  __      _        
          _ __ ___   __ _(_) |  \/  | ___| |_ __ _ 
