@@ -50,6 +50,10 @@ Either you are on windows or linux first download the original metadata of the e
 Then we pass the `eml` file to the executable.
 <br>
 
+This is a demo of how to download the mail. You should find something similar.
+
+![mail-download](images/mail-download.gif)
+
 ### Linux
 
 1. Use `meta.py` from the cloned repo. (Python is required)
