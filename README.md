@@ -101,7 +101,7 @@ python3 meta.py -f message.eml
 
 ## Demo
 
-Coming Soon
+![demo-gif](images/demo.gif)
 
 ## Contributions
 
