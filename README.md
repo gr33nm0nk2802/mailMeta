@@ -72,7 +72,7 @@ Contributions and pull requests are highly encouraged for this project.
 
 ## Inspiration
 
-This project has been made as a part of the GPCSSIP 2021 under the mentorship of Rakshit Tandon sir to help aid in the detection of spoofed email and their tracking.
+This project has been made as a part of the GPCSSIP 2021 under the mentorship of [Rakshit Tandon](https://www.linkedin.com/in/rakshittandon/) sir to help aid in the detection of spoofed email and their tracking.
 
 ## FAQ
 
