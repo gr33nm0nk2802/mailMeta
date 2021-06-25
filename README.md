@@ -11,6 +11,7 @@
 
 
 # Table of Contents
+- [About mailMeta](#about-mailmeta)
 - [Installation](#installation)
 - [Usage](#usage)
   * [Linux](#linux)
@@ -21,7 +22,40 @@
 - [FAQ](#faq)
 - [License](#license)
 
+## About mailMeta
+
+- What is mailMeta?
+
+**mailMeta** is a python based forensic tool which reads through the email headers from the email file and extracts crucial information to identify if the email is legitimate. 
+
+-  What are the advantages of using mailMeta?
+
+Have you ever heared of **email hacking** or **sophisticated email crimes** where a spoofed email is sent to the victim and the victim trusts this email based on the email address which is infact fake. These email contains mallicious links which can be used to extract some information or install some malware or backdoors on your device. So, in order to avoid you from this mailMeta comes to your rescue.
+  
+ Here I have added instructions on how to download the email from the file and then pass it to the mailMeta executable. It then parses the headers and informs you if the mail is genuine or not. Whenever you are suspicious about an email be sure to check it once here. It can save you in most of the scenarios. If anyone has some ideas/updates feel free to open an issue or create a pull request.
+ 
+ - What are the information revealed by the mailMeta?
+mailMeta parses the following headers:
+   
+   * Message-ID 
+   * SPF-Record
+   * DKIM-Record
+   * DMARC-Record
+   * Spoofed Email detection based on the above headers
+   * IP-Address of the sender
+   * Service Provider used for sending the email
+   * Content-Type
+   * Data and Time 
+   * Subject
+ 
+ - Why is it important to check such parameters?
+   * [ONGC Email Phising](https://indianexpress.com/article/business/companies/identity-theft-ongc-falls-prey-to-cyber-fraud-loses-rs-197-crore/)
+   There are many more such cases which you can find online releated to email crimes.
+ 
 ## Installation
+
+You have two methods to use metaMail. Either you can download the github repo and run the meta.py file from the command line. Make sure you have all requirements installed in this case like python3. You may also run the standalone binaries. This is for those who have very little technical knowledge.
+
 <br>
 1. Clone the repository
 
@@ -101,6 +135,8 @@ python3 meta.py -f message.eml
 
 ## Demo
 
+This is a sample demonstration explaining all the procedures. First it has the steps for running on linux then it has the steps needed for running on windows just in case you are struck.
+
 ![demo-gif](images/demo.gif)
 
 ## Contributions
@@ -109,7 +145,7 @@ Contributions and pull requests are highly encouraged for this project.
 
 ## Inspiration
 
-This project has been made as a part of the GPCSSIP 2021 under the mentorship of [Rakshit Tandon](https://www.linkedin.com/in/rakshittandon/) sir to help aid in the detection of spoofed email and their tracking.
+This project has been made as a part of the GPCSSIP 2021 under the mentorship of [Rakshit Tandon](https://www.linkedin.com/in/rakshittandon/) sir to help aid in the detection of spoofed email and their tracking. 
 
 ## FAQ
 
