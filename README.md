@@ -71,15 +71,18 @@ meta -f message.eml
 ```
 <br>
 
-![meta-linux](images/linux-meta)
+![meta-linux](images/linux-meta.png)
 
 ### Windows
 
 1. Executing the precompiled binaries downloaded from the releases page. (No dependencies needed)
 
 ```
-meta.exe -f message.eml
+meta.exe -f .\message.eml
 ```
+
+![win-meta-exe](images/win-meta-exe.png)
+
 <br>
 
 or
@@ -89,6 +92,9 @@ or
 ```
 python3 meta.py -f message.eml
 ```
+
+![win-meta-py](images/win-meta-py.png)
+
 ## Demo
 
 Coming Soon
