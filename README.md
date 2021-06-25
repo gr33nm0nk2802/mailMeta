@@ -52,13 +52,17 @@ Then we pass the `eml` file to the executable.
 
 ### Linux
 
-1. Use `meta.py` from the cloned repo.
+1. Use `meta.py` from the cloned repo. (Python is required)
 
 ```
 python3 meta.py -f message.eml
 ```
 
 ![metapy-linux](images/linux-metapy.png)
+
+or
+
+2. Downloading the `meta` executable for linux and giving it executable permissions. Then supplying the eml file to the pre-compiled binary. (No dependencies)
 
 ```
 wget https://github.com/gr33nm0nk2802/mailMeta/releases/download/1.0.0/meta
@@ -67,13 +71,24 @@ meta -f message.eml
 ```
 <br>
 
+![meta-linux](images/linux-meta)
+
 ### Windows
+
+1. Executing the precompiled binaries downloaded from the releases page. (No dependencies needed)
 
 ```
 meta.exe -f message.eml
 ```
 <br>
 
+or
+
+2. Running from the repository clonned (Python Required)
+
+```
+python3 meta.py -f message.eml
+```
 ## Demo
 
 Coming Soon
