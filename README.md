@@ -1,4 +1,4 @@
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![logo](https://github.com/gr33nm0nk2802/mailMeta/blob/main/logo.png)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![logo](https://github.com/gr33nm0nk2802/mailMeta/blob/main/images/logo.png)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Stars](https://img.shields.io/github/stars/gr33nm0nk2802/mailMeta?style=flat)
 [![Category](https://img.shields.io/badge/Category-OSINT-green.svg)](https://shields.io/)
@@ -37,6 +37,8 @@
   ```
 <br>
 
+![git-clone](images/clone.png)
+
 Additionally you can directly download the executable from the [Releases](https://github.com/gr33nm0nk2802/mailMeta/releases/tag/1.0.0) and use them.
 <br>
 
@@ -49,6 +51,10 @@ Then we pass the `eml` file to the executable.
 <br>
 
 ### Linux
+
+1. Use `meta.py` from the cloned repo.
+
+![metapy-linux](images/linux-metapy.png)
 
 ```
 meta -f message.eml
